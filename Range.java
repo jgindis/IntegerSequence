@@ -8,7 +8,9 @@ public class Range implements IntegerSequence {
     end = b;
     curpos = a;
   }
-  public void reset(){  }
+  public void reset() {
+    curpos = start;
+  }
   public int length(){  }
   public boolean hasNext(){  }
 
