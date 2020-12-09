@@ -19,6 +19,12 @@ public class ArraySequence implements IntegerSequence{
     return (currentIndex < data.length);
   }
 
+  public int next() throws NoSuchElementException {
+    if (!(hasNext())) throw new NoSuchElementException();
+    currentIndex++;
+    return data[currentIndex--];
+  }
+
   public int length() {
       return data.length;
     }
