@@ -29,7 +29,7 @@ public class ArraySequence implements IntegerSequence{
   public int next() throws NoSuchElementException {
     if (!(hasNext())) throw new NoSuchElementException();
     currentIndex++;
-    return data[currentIndex--];
+    return data[currentIndex-1];
   }
 
   public int length() {
